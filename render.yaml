@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: vocal-chain-api
+    env: node
+    plan: free
+    buildCommand: |
+      apt-get update && apt-get install -y ffmpeg
+      npm install
+    startCommand: node server.js
