@@ -1,3 +1,6 @@
+const cors = require('cors');
+app.use(cors());
+
 const express = require('express');
 const multer  = require('multer');
 const ffmpeg = require('fluent-ffmpeg');
